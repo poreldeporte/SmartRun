@@ -151,7 +151,7 @@
     );
 
     var colorsPaletteArr = ["blueColor", "greenColor", "blackColor", "pinkColor"];
-    var streetColorsArr = [blackStreetSymbol, pinkStreetSymbol, blueStreetSymbol, greenStreetSymbol];
+    var streetColorsArr = [ blueStreetSymbol, greenStreetSymbol, blackStreetSymbol, pinkStreetSymbol ];
 
     var chartOptions = {
       elevationMarkerSymbol: "m-3,-3 l3,6 3,-6 z",
