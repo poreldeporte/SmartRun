@@ -1,0 +1,49 @@
+#intro section {
+	transition: all 1s ease;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #000;
+}
+.promo-video video {
+	transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+audio[controls], canvas, video {
+    display: inline-block;
+}
+header#navbar{
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	color: #FFF;
+	width: 100%;
+}
+header#navbar ul li{
+	width: 49%;
+}
+header#navbar ul li a{
+	transition: all 1s ease;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+header#navbar ul li a:hover{
+	color: #0079c1;
+	text-decoration: none;
+}
+.blackbg60{
+	background-color: rgba(0, 0, 0, .6);
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	height: 600px;
+}

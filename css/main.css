@@ -1,0 +1,139 @@
+.blue{
+	color: #0079c1;
+}
+h2.endDestination{
+	font-size: 18px;
+	color: #FFF;
+}
+.routeInfoContainer{
+	/*background-color:rgb(102, 102, 102);*/
+	padding: 10px;
+	margin-top: 15px;
+}
+#panel{
+	padding-left: 35px;
+	padding-top: 30px;
+	float: left;
+	height: 100%;
+	width: 35%;
+	background-color: white;
+	height: 100vh;
+	overflow: scroll;
+}
+#search {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    right: 50px;
+}
+#LocateButton {
+	position: absolute;
+	top: 95px;
+	left: 29px;
+	z-index: 50;
+}
+#map{
+	position: relative;
+	width: 65%!important;
+	float:right;
+	height:100vh;
+}
+#StreetLights{
+	position: absolute;
+	padding: 5px 5px 5px 5px;
+	right: 50px;
+	background-color: white;
+	top: 80px;
+	height: 40px;
+	width: 40px;
+	background-image:url("../images/street-light-icon.png");
+    background-size: cover;
+    z-index: 9999;
+    transition: all .5s ease;
+	cursor: pointer;
+}
+#StreetLights:hover{
+	background-color: #0079c1;
+}
+#StreetLights.active{
+	background-color: #0079c1;
+}
+.hide{
+	display: none;
+}
+#options{
+
+}
+#about{
+	margin-top: 25px;
+}
+.esriDetailsAboutIcon {
+    background-image: url("../images/info.png");
+    height: 16px;
+    width: 16px;
+}
+.esriDetailsContentsIcon {
+    background-image: url("../images/details.png");
+    height: 16px;
+    width: 16px;
+}
+.esriDetailsRouteIcon {
+    background-image: url("../images/route-icon.png");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+.esriDetailsAboutIcon, .esriDetailsRouteIcon, .esriDetailsContentsIcon, .esriDetailsLegendIcon, .esriScaleMinIcon, .esriScaleMaxIcon, .esriScaleClearIcon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    
+    margin-right: 6px !important;
+}
+.directions-number{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 24px;
+}
+.panel_title.panel_subtitle {
+    padding: 0 0 5px 0 !important;
+    margin: 10px 0 3px 0;
+    border-bottom: 1px solid #aeaeae;
+}
+.panelSubHeader {
+    font-weight: normal !important;
+    padding-left: 15px !important;
+    color: #333 !important;
+    font-size: 18px !important;
+    line-height: 18px !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+}
+.panel-intro{
+	font-size: 18px;
+	background-color: #0079c1;
+	color: #FFF;
+	margin-top: 15px;
+	padding: 10px;
+}
+.blackColor{
+	background-color: rgba(0, 0, 0, .7)!important;
+	padding: 10px;
+	margin-top: 15px;
+}
+.pinkColor{
+	background-color: rgba(255, 0, 255, .7)!important;
+	padding: 10px;
+	margin-top: 15px;
+}
+.blueColor{
+	background-color: rgba(0, 128, 125, .7)!important;
+	padding: 10px;
+	margin-top: 15px;
+}
+.greenColor{
+	background-color: rgba(102, 204, 0, .7)!important;
+	padding: 10px;
+	margin-top: 15px;
+}

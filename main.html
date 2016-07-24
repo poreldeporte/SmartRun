@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <title>Analyze your run</title>
+
+  <!-- Importing JS API 4.0 -->
+  <script src="https://js.arcgis.com/3.17/"></script>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.17/dijit/themes/claro/claro.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.17/esri/css/esri.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Importing Custom Files -->
+  <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- // <script src="./js/RunAnalysis.js"></script> -->
+  <style>
+  html, body{
+    height: 100%;
+    width: 100%;
+    
+  }
+  </style>
+</head>
+
+<body class="claro"> 
+  <div class="row">
+    <div id="map" dojotype="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+      <div id="search"></div>
+      <div id="LocateButton"></div>
+      <div id="StreetLights"></div>
+    </div>    
+    <div id="panel">
+      <div id="options">
+        <ul class="nav nav-tabs">
+          <li id="about-nav" class="option-app active"><a href="#"><span class="dijitReset dijitInline dijitIcon esriDetailsAboutIcon"></span> About</a></li>
+          <li id="content-nav" class="option-app"><a href="#"><span class="dijitReset dijitInline dijitIcon esriDetailsContentsIcon"></span> Content</a></li>
+        </ul>
+      </div>
+      <div id="about">
+        <div id="aboutContentTitle" class="panelSubHeader panel_title panel_subtitle">Get a full route analysis of your workout in a few easy steps!</div>
+
+        <div class="how-to">
+          <ul class="list-unstyled">
+            <li class="panel-intro"><span class="directions-number">1.</span> Choose the content tab above</li>
+            <li class="panel-intro"><span class="directions-number">2.</span> Choose your distance</li>
+            <li class="panel-intro"><span class="directions-number">3.</span> Search for your starting point</li>
+            <li class="panel-intro"><span class="directions-number">4.</span> Click, and start analyzing!</li>
+          </ul>
+        </div>
+      </div>
+      <div id="content" class="hide"> 
+        <h3 class="panel-intro">1. Choose your Distance</h3>
+
+        <div style="width: 90%; margin: 10px; margin: 0 auto;">
+          
+          <ol data-dojo-type="dijit/form/HorizontalRuleLabels"
+            data-dojo-props="
+              container: 'topDecoration',
+              style: 'height: 1.2em; font-weight: bold; margin: 0 12px;'">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+          <div data-dojo-type="dijit/form/HorizontalRule"
+            data-dojo-props="
+              container: 'topDecoration',
+              count: 6,
+              style: 'height: 5px; margin: 0 12px;'">
+          </div>
+          <input id="hslider" value="2" type="range"
+            data-dojo-type="dijit/form/HorizontalSlider"
+            data-dojo-props="
+              minimum: 0,
+              maximum: 5,
+              showButtons: false,
+              discreteValues: 1">
+          <div style="padding-top: 10px; text-align: center;">Travel Distance: <strong id="decValue"></strong> miles</div>
+        </div>
+        <h3 class="panel-intro">2. Click on your starting point</h3>
+        <div id="aboutContentTitle" class="panelSubHeader panel_title panel_subtitle"><span class="dijitReset dijitInline dijitIcon esriDetailsAboutIcon"></span>  Scroll over graph to see in-depth land analysis!</div>
+        <div id="profileChartNode"></div>
+      </div>
+    </div>
+  </div>
+ <!--  <div data-dojo-type="RunAnalysis">RunAnalysis Widget</div> -->
+</body>
+</html>
